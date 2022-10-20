@@ -195,6 +195,7 @@ background: white;
  background-color: #45567d;
  padding: 3% 2rem;
  text-align: center;
+ margin: auto;
  display: flex;
  flex-direction: column;
  flex-wrap: nowrap;
@@ -207,10 +208,11 @@ background: white;
 }
 
 .projects-grid img{
+ 
   padding: 40px;
   width: 19.875rem;
   height: 19.25rem;
-  margin: 40px 15px 15px 0;
+  margin: 15px;
   border: none;
   border-radius: 10px;
   box-shadow: 0 3px 10px white;
