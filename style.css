@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@200;400;700&family=Raleway:wght@400;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+ --main-white: #f0f0f0;
+ --main-red: #be3144;
+ --main-blue: #45567d;
+ --main-gray: #303841;
+}
+/* Base reset */
+/* the universal selector below was used to set general padding and margin on the whole page, this makes all the sections stretch to the end of the page at all sides*/
+*{padding: 0;
+margin:0;
+box-sizing: border-box;
+}
+
+html{
+font-size: 62.5%;
+ scroll-behavior: smooth;
+}
+
+*, *::before, *::after{
+ box-sizing: inherit;
+}
+
+body {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.8rem; /* 18px */
+ font-weight: 400;
+ line-height: 1.4;
+}
+
+h1, h2{
+ font-family: 'Raleway', sans-serif;
+}
+
+header{
+ display: grid;
+ grid-template-columns: 3fr 5fr 2fr;
+ background: #be3144;
+ position: sticky;
+ top: 0;
+ left: 0;
+ padding: 20px 40px;
+ font-family: 'Montserrat', sans-serif;
+ box-shadow: 0 3px 10px rgba(0, 0, 0, 0.8);
+}
+
+header li, header a, .call-me {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+nav li{
+  list-style: none;
+  display: inline-block;
+  text-align: center;
+}
+
+#logo{
+  cursor: pointer;
+  width: 80px;
+}
+
+nav li a{
+  margin: 0 15px;
+  transition: all 0.2s ease 0s;
+}
+
+nav li a:hover{color: #0088a9;
+  background: white;
+  padding: 32px 10px;
+  font-weight: 600; 
+}
+
+
+header .call-me{
+  background: rgb(0, 136, 169, 1);
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 3px 10px #a17a69;
+  margin-right: 80px;
+  font-weight: 600; 
+  width: 80px;
+  cursor: pointer;
+}
+
+.hero{
+ display: flex;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ background: url('./images/picx.jpg');
+ background-size: contain;
+ position: relative;
+ width: 100%;
+ height: 100vh;
+ align-items: center; 
+ justify-content: center;
+}
+
+.hero h1{
+ color: white;
+ font-size: 6rem;
+ font-weight: 700;
+ margin-bottom: 0px;
+}
+
+.hero p{
+ color: white;
+ font-size: 3rem;
+ margin-top: 0px;
+ font-style: italic;
+ font-family: 'Poppins', sans-serif;
+ font-weight: 500;
+ text-align: center;
+}
+
+.about{
+  padding: 2%;
+  margin: 8%;
+  background: white;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.8rem;
+}
+
+.about h1{
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#learn-more {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#learn-more a{
+  text-decoration: none;
+  color: #0088a9;
+}
+#about-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 4em;
+  padding: 8%;
+}
+#about-body img{
+width: 40%;
+}
+
+#about-body p{
+  padding: 4%;
+background: white;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-size: 1.8rem;
+}
+
+#skills{
+  text-align: center;
+}
+
+.skill-header{
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.skills-wrapper{
+  margin:  auto;
+  display: flex;
+  flex-direction: column;
+ flex-wrap: nowrap;
+ padding-bottom: 8%;
+}
+
+.skills-wrapper img{
+  padding: 40px;
+  width: 19.875rem;
+  height: 19.25rem;
+  margin: 15px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px #a17a69;
+}
+
+
+.projects-grid{
+ background-color: #45567d;
+ padding: 3% 2rem;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ flex-wrap: nowrap;
+ padding-bottom: 8%;
+}
+
+.projects-grid h2{
+  padding-bottom: 10px;
+  color: var(--main-white);;
+}
+
+.projects-grid img{
+  padding: 40px;
+  width: 19.875rem;
+  height: 19.25rem;
+  margin: 40px 15px 15px 0;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px white;
+}
+
+#butn{
+  background: #be3144;
+  border: none;
+  border-radius: 50px;
+  padding: 15px;
+  width: 100px;
+  margin: auto;
+  cursor: pointer;
+  margin-top: 2%;
+  }
+
+  #butn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  }
+
+.contact-section{
+ background: #303841;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ padding: 2% 2rem;
+}
+
+.cont-header{
+  padding-bottom: 2%;
+  color: white;
+}
+
+.cont-links{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.cont-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+footer{
+ background: #2f3b47;
+ text-align: center;
+ padding: 2% 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+.first, .second{
+  margin-bottom: 1.5%;
+  color: white;
+}
+
+
+/*settings for diffrent screen sizes using media query */
+@media screen and (max-width: 1024px){
+header{
+  display: grid;
+  grid-template-columns: 1.9fr 6fr 0.1fr;
+ }
+ nav ul{
+  margin: 0 10px 0 10px;
+} 
+ nav li a{
+   margin: 0 4px;
+ } 
+ header .call-me{
+   margin-right: 50px; 
+   width: 70px;
+ }
+ .hero{
+  height: 70vh;
+ }
+ 
+ .hero h1{
+  font-size: 6rem;
+ }
+ 
+ .hero p{
+  font-size: 2.6rem;
+ }
+ 
+ .about{
+   padding: 4%;
+   font-size: 1.8rem;
+ }
+ #skills h2{
+ font-size: 2.4rem;
+}
+
+.skills-wrapper img{
+  padding: 20px;
+  width: 13.975rem;
+  height: 13.925rem;
+  margin: 12px;
+}
+.projects-grid h2{
+  font-size: 2.5rem;
+}
+
+.projects-grid img{
+  padding: 20px;
+  width: 13.875rem;
+  height: 13.25rem;
+  margin: 20px 12px 15px 0;
+}
+
+#butn{
+  width: 90px;
+  }
+
+.contact-section{
+ padding: 3% 2rem;
+}
+
+.cont-header{
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+}
+
+.cont-links{
+ font-size: 1.7rem;
+}
+
+footer{
+ padding: 3% 0;
+}
+
+.first{
+  margin: 0 5% 3% 5%;
+  font-size: 1.8rem;
+}
+.second{
+  font-size: 1.7rem;
+}
+}
+
+@media screen and (max-width: 800px){
+  header{
+    display: grid;
+    grid-template-columns: 1fr 4fr 0.1fr;
+   }
+   nav li a{
+     margin: 0 4px;
+     font-weight: 500;
+   } 
+   header .call-me{
+    margin-right: 15px; 
+    width: 60px;
+   }
+
+   .hero{
+    height: 60vh;
+   }
+   
+   .hero h1{
+    font-size: 5rem;
+   }
+   
+   .hero p{
+    font-size: 2.5rem;
+   }
+   
+   .about{
+     padding: 3%;
+     font-size: 1.6rem;
+   }
+   #skills h2{
+   font-size: 2.4rem;
+  }
+ 
+  .skills-wrapper img{
+    padding: 16px;
+    width: 9.975rem;
+    height: 9.925rem;
+    margin: 8px;
+  }
+  .projects-grid h2{
+    font-size: 2.4rem;
+  }
+  
+  .projects-wrapper img{
+    padding: 4px;
+    width: 9.875rem;
+    height: 9.25rem;
+    margin: 20px 8px 15px 0;
+  }
+  
+  #butn{
+    width: 80px;
+    }
+  
+  .contact-section{
+   padding: 3% 2rem;
+  }
+  
+  .cont-header{
+    font-size: 1.6rem;
+    margin-bottom: 2%;
+  }
+  
+  .cont-links{
+   font-size: 1.7rem;
+  }
+  
+  footer{
+   padding: 3% 0;
+  }
+  .first{
+    margin: 0 4% 3% 4%;
+    font-size: 1.7rem;
+  }
+  .second{
+    font-size: 1.7rem;
+  }
+  }
+
+  @media screen and (max-width: 680px){
+    header{
+      padding: 10px 40px;
+    }
+    nav ul{
+      margin: 0 15px 0 30px;
+    }
+     nav li a{
+      display: inline-block;
+      margin: 2px 8px;
+      font-weight: 500;
+     } 
+     header .call-me{
+       margin-right: 15px; 
+       width: 50px;
+       height: 20px;
+     }
+     nav li a:hover{
+      padding: 12px 8px;
+    }
+    }
+
+    @media screen and (max-width: 480px){
+      header{
+        display: grid;
+        grid-template-columns: 3fr 4fr 1fr ;
+        flex-direction: row;
+        justify-content: center;
+        font-weight: 500;
+        padding: 2% 4%;
+      }
+header img{
+  margin: 0 20px;
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}      
+nav li a{
+        padding: 0 5px;
+        margin: 2px;
+        width: 100px;
+      }
+      header .call-me{
+        padding: 5px 5px;
+        width: 70px;
+        height: 30px;
+  align-self: center;
+      }
+      nav li a:hover{
+        padding: 12px 8px;
+      }
+      .hero{
+        height: 60vh;
+        padding: 0px 23px;
+       }
+       
+       .hero h1{
+        font-size: 3rem;
+       }
+       
+       .hero p{
+        font-size: 1.4rem;
+       }
+       .about{
+        padding: 3%;
+        font-size: 1.6rem;
+       }
+       #skills h2{
+        font-size: 1.5rem;
+       }
+      
+       .skills-wrapper img{
+         padding: 14px;
+         width: 6.975rem;
+         height: 6.925rem;
+         margin: 8px;
+         margin: 20px 8px 15px 0;
+       }
+       .projects-grid h2{
+         font-size: 2rem;
+       }
+       
+       .projects-grid img{
+         padding: 14px;
+         width: 6.875rem;
+         height: 6.25rem;
+         margin: 20px 8px 15px 0;
+       }
+       
+       #butn{
+         width: 60px;
+         }
+       
+       .contact-section{
+        padding: 2% 1rem;
+       }
+       
+       .cont-header{
+         font-size: 1.2rem;
+         margin-bottom: 2%;
+       }
+       
+       .cont-links{
+        font-size: 1.2rem;
+        margin: 0 3%;
+       }
+       
+       footer{
+        padding: 3% 0;
+       }
+       .first{
+         margin: 0 6% 3% 6%;
+         font-size: 1.4rem;
+       }
+       .second{
+         font-size: 1.4rem;
+       }
